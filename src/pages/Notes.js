@@ -8,40 +8,6 @@ import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
 import { FaAlignLeft } from "@react-icons/all-files/fa/FaAlignLeft";
 import { IoMdArrowBack } from "@react-icons/all-files/io/IoMdArrowBack";
 import { GrLinkNext } from "@react-icons/all-files/gr/GrLinkNext";
-import { createContext } from "react";
-import { render } from 'react-dom'
-
-export const NotesContext = createContext()
-export const DataProvider = (Props) => {
-    const [items, setItems] = useState(
-        [
-            {
-                id: 1,
-                itemTitle: "Feedbacks",
-                Para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio."
-
-            },
-            {
-                id: 2,
-                itemTitle: "Weekly Task",
-                Para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio."
-
-            },
-            {
-                id: 3,
-                itemTitle: "Lyrics",
-                Para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio."
-
-            }
-
-        ])
-    render(
-        <NotesContext.Provider>
-            {Props.Children}
-        </NotesContext.Provider>
-    )
-
-}
 
 function Notes() {
 
